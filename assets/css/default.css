@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/* config geral */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: none;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* variaveis do css */
+:root{
+    --cor-fundo: #090E16;
+    --cor-destaque: #7B4AE2;
+    --cor-destaque-escura: #7a4ae22f;
+}
+
+/* algumas configuracoes da pagina */
+body{
+    position: relative;
+    background-color: var(--cor-fundo);
+    font-family: 'Raleway';
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}

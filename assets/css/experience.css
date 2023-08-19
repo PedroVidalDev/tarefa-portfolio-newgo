@@ -1,0 +1,77 @@
+/* primeira parte da pagina */
+section.experiencePage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--cor-destaque);
+}
+
+div.containerBlocos{
+    display: flex;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bloco{
+    width: 250px;
+    height: 250px;
+    background-color: none;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p.timeDescription{
+    color: white;
+    font-size: 1.5em;
+}
+
+p.profission{
+    color: white;
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+div.containerProfissoes{
+    display: flex;
+    width: 80%;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: var(--cor-destaque-escura);;
+    align-items: center;
+    justify-content: center;
+}
+
+div.adjustContainer{
+    display: flex;
+    width: 80%;
+    height: 100px;
+    justify-content: space-between;
+}
+
+div.blocoTexto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.desc{
+    color: var(--cor-destaque);
+    font-size: 1em;
+}
+
+p.descBold{
+    color: var(--cor-destaque);
+    font-weight: bold;
+    font-size: 2.3em;
+}

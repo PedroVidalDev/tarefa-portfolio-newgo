@@ -1,0 +1,30 @@
+section.aboutPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+div.adjustAbout{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+p.textName{
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+p.aboutDesc{
+    color: white;
+    font-size: 0.8em;
+    margin: 5px 0;
+}
+
+.aboutDesc i{
+    color: var(--cor-destaque);
+}
