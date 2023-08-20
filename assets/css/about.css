@@ -28,3 +28,23 @@ p.aboutDesc{
 .aboutDesc i{
     color: var(--cor-destaque);
 }
+
+/* Responsividade */
+@media (max-width: 1149px){
+    img.aboutIcon{
+        width: 300px;
+    }
+}
+
+@media (max-width: 783px){
+    div.adjustAbout{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px){
+    p.textName{
+        font-size: 2em;
+    }
+
+}

@@ -8,6 +8,14 @@ section.apresentationPage{
     border-bottom: 1px solid var(--cor-destaque)
 }
 
+.divIconsExtra{
+    display: none;
+}
+
+.letsTalkExtra{
+    display: none;
+}
+
 /* div q contem todos os elementos a esquerda da pagina */
 div.apresentation{
     display: flex;
@@ -69,4 +77,75 @@ button.wppButton{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 989px){
+    img.iconeHome{
+        width: 350px;
+    }
+}
+
+@media (max-width: 757px){
+
+    section.apresentationPage{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    /* elementos esquerda */
+    div.apresentation{
+        width: 90%;
+        align-items:center;
+        margin-left: 0px;
+    }
+
+    /* elementos direita */
+    div.letsTalk{
+        margin-right: 0px;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    button.wppButton{
+        margin-top: 0px;
+    }
+
+    /* inversao dos icones e do wpp */
+    .divIcons{
+        display: none;
+    }
+
+    .divIconsExtra{
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    .divIconsExtra i{
+        margin: 0 10px;
+    }
+
+    div.letsTalk{
+        display: none;
+    }
+
+    .letsTalkExtra{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 370px){
+
+    div.apresentation{
+        align-items: flex-start;
+    }
+
+    .letsTalkExtra{
+        width: 90%;
+        justify-content:flex-start;
+    }
 }

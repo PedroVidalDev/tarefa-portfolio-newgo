@@ -39,3 +39,10 @@ li a:hover{
 .nav-links{
     list-style: none;
 }
+
+/* Responsividade */
+@media (max-width: 642px){
+    nav{
+        display: none;
+    }
+}

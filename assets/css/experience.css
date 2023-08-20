@@ -75,3 +75,42 @@ p.descBold{
     font-weight: bold;
     font-size: 2.3em;
 }
+
+/* Responsividade */
+@media (max-width: 966px){
+    .bloco{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 785px){
+    .bloco{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+
+@media (max-width: 757px){
+    .bloco{
+        width: 200px;
+        height: 200px;
+        margin: 5px 0;
+    }
+    
+    div.containerBlocos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div.containerProfissoes{
+        display: none;
+    }
+}
+
+@media (max-width: 399px){
+    .bloco{
+        width: 90%;
+    }
+}
