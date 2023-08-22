@@ -28,7 +28,8 @@ body{
 }
 
 main{
-    height: 100vh;
+    position: relative;
+    height: auto;
     width: 100%;
 }
 

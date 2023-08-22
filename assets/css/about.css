@@ -1,5 +1,6 @@
 section.aboutPage{
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -47,4 +48,10 @@ p.aboutDesc{
         font-size: 2em;
     }
 
+}
+
+@media (max-height: 682px){
+    img.aboutIcon{
+        width: 250px;
+    }
 }
