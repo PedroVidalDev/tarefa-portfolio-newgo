@@ -109,3 +109,20 @@ p.descBold{
         display: none;
     }
 }
+
+@media (max-height: 680px) and (max-width: 757px){
+    p.timeDescription{
+        color: white;
+        font-size: 1em;
+    }
+    
+    p.profission{
+        color: white;
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+
+    div.bloco img{
+        width: 70px;
+    }
+}

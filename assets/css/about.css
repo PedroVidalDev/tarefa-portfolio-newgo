@@ -26,10 +26,6 @@ p.aboutDesc{
     margin: 5px 0;
 }
 
-.aboutDesc i{
-    color: var(--cor-destaque);
-}
-
 /* Responsividade */
 @media (max-width: 1149px){
     img.aboutIcon{
@@ -50,8 +46,16 @@ p.aboutDesc{
 
 }
 
-@media (max-height: 682px){
+@media (max-height: 682px) and (max-width: 760px){
     img.aboutIcon{
         width: 250px;
+    }
+
+    p.textName{
+        font-size: 1.5em;
+    }
+    
+    p.aboutDesc{
+        font-size: 0.6em;
     }
 }
