@@ -64,6 +64,10 @@ div#divIcons i{
     color: rgba(255, 255, 255, 0.49);
 }
 
+.fa-github{
+    margin: 0 10px;
+}
+
 /* div que contem todos os elementos a direita da pagina */
 div.letsTalk{
     display: flex;
