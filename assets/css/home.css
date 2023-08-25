@@ -173,8 +173,8 @@ button.wppButton{
     }
 }
 
-@media (max-height: 655px) and (max-width: 429px){
+@media (max-height: 740px) and (max-width: 429px){
     img.iconeHome{
-        width: 270px;
+        width: 290px;
     }
 }
