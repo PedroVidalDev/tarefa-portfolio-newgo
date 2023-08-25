@@ -18,11 +18,11 @@
             <img alt="navIcon" class="navIcon" src="assets/img/homeIcons/navIcon.png">
 
             <ul class="nav-links">
-                <li> <a href=""> Home </a> </li>
-                <li> <a href=""> Sobre mim </a> </li>
+                <li> <a href="#apresentationPage"> Home </a> </li>
+                <li> <a href="#aboutPage"> Sobre mim </a> </li>
                 <li> <a href=""> Portfolio </a> </li>
                 <li> <a href=""> Skills </a> </li>
-                <li> <a href=""> Carreira </a> </li>
+                <li> <a href="#experiencePage"> Carreira </a> </li>
                 <li> <a href=""> Recomendacoes </a> </li>
                 <li> <a href=""> Contato </a> </li>
             </ul>
@@ -30,40 +30,42 @@
     </header>
 
     <main>
-        <section class="apresentationPage">
-            <div class="letsTalkExtra">
-                <a class="cvDownloadLink" href=""> Baixar CV <i class="fa-solid fa-download fa-1x"></i> </a>
-                <button class="wppButton"> <i class="fa-brands fa-whatsapp fa-1x"></i> Vamos conversar </button>
-            </div>
+        <section id="apresentationPage" class="apresentationPage">
+            <div class="adjustHome">
+                <div class="letsTalkExtra">
+                    <a class="cvDownloadLink" href=""> Baixar CV <i class="fa-solid fa-download fa-1x"></i> </a>
+                    <button class="wppButton"> <i class="fa-brands fa-whatsapp fa-1x"></i> Vamos conversar </button>
+                </div>
 
-            <div class="apresentation">
-                <p class="saudacoesTag"> 👋 Saudações! </p>
-                <p class="username"> Henrique<br>Souza </p>
-                <p class="profissao"> Frond-end developer - UI Designer </p>
-                <div class="divIcons" id="divIcons">
+                <div class="apresentation">
+                    <p class="saudacoesTag"> 👋 Saudações! </p>
+                    <p class="username"> Henrique<br>Souza </p>
+                    <p class="profissao"> Frond-end developer - UI Designer </p>
+                    <div class="divIcons" id="divIcons">
+                        <i class="fa-brands fa-linkedin fa-2x"></i>
+                        <i class="fa-brands fa-github fa-2x"></i>
+                        <i class="fa-brands fa-square-behance fa-2x"></i>
+                    </div>
+                </div>
+
+                <div class="imageProfile">
+                    <img alt="icone" class="iconeHome" src="assets/img/homeIcons/authorIcon.png" width="500px">
+                </div>
+
+                <div class="divIconsExtra" id="divIcons">
                     <i class="fa-brands fa-linkedin fa-2x"></i>
                     <i class="fa-brands fa-github fa-2x"></i>
-                    <i class="fa-brands fa-discord fa-2x"></i>
+                    <i class="fa-brands fa-square-behance fa-2x"></i>
                 </div>
-            </div>
-
-            <div class="imageProfile">
-                <img alt="icone" class="iconeHome" src="assets/img/homeIcons/authorIcon.png" width="500px">
-            </div>
-
-            <div class="divIconsExtra" id="divIcons">
-                <i class="fa-brands fa-linkedin fa-2x"></i>
-                <i class="fa-brands fa-github fa-2x"></i>
-                <i class="fa-brands fa-discord fa-2x"></i>
-            </div>
-            
-            <div class="letsTalk">
-                <a class="cvDownloadLink" href=""> Baixar CV <i class="fa-solid fa-download fa-1x"></i> </a>
-                <button class="wppButton"> <i class="fa-brands fa-whatsapp fa-1x"></i> Vamos conversar </button>
+                
+                <div class="letsTalk">
+                    <a class="cvDownloadLink" href=""> Baixar CV <i class="fa-solid fa-download fa-1x"></i> </a>
+                    <button class="wppButton"> <i class="fa-brands fa-whatsapp fa-1x"></i> Vamos conversar </button>
+                </div>
             </div>
         </section>
 
-        <section class="experiencePage">
+        <section id="experiencePage" class="experiencePage">
             <div class="containerBlocos"> 
                 <div class="bloco">
                     <img src="assets/img/experienceIcons/code.png" alt="codeIcon" width="100px">
@@ -102,7 +104,7 @@
             </div>
         </section>
 
-        <section class="aboutPage">
+        <section id="aboutPage" class="aboutPage">
             <div class="adjustAbout">
                 <img src="assets/img/aboutMeIcons/iconFace.png" class="aboutIcon" alt="faceIcon" width="400px">
                 <div class="textAbout">

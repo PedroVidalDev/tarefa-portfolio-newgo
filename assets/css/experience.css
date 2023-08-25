@@ -13,6 +13,7 @@ section.experiencePage{
 div.containerBlocos{
     display: flex;
     width: 80%;
+    max-width: 850px;
     height: auto;
     align-items: center;
     justify-content: space-between;
@@ -44,6 +45,7 @@ p.profission{
 div.containerProfissoes{
     display: flex;
     width: 80%;
+    max-width: 850px;
     height: 100px;
     border-radius: 20px;
     margin-top: 20px;
