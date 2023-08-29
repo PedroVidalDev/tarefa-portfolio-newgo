@@ -1,0 +1,233 @@
+/* geral da pagina */
+section.projectsPage{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container com as infos do topo */
+div.container-projects-title{
+    display: flex;
+    position: relative;
+    width: 90%;
+    max-width: 1273px;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p.container-projects-title-left-description{
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+
+div.container-projects-title-right{
+    display: flex;
+}
+
+div.right-description-projects-tag{
+    display: flex;
+    border: 1px solid var(--cor-destaque);
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 35px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+div.right-description-projects-tag:hover{
+    background-color: var(--cor-destaque-escura);
+}
+
+div.right-description-projects-tag p{
+    color: var(--cor-destaque);
+    font-size: 1em;
+    margin-left: 5px;
+}
+
+/* container com os projetos */
+div.container-projects{
+    position: relative;
+    width: 90%;
+    max-width: 1273px;
+    height: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+
+div.project-bloco{
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: 300px;
+    flex-direction: column;
+    padding: 30px 30px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 10px;
+    margin: 20px 20px;
+}
+
+div.project-bloco:hover{
+    background-color: var(--cor-destaque-escura);
+    transition: .5s;
+}
+
+div.project-descripton p{
+    color: white;
+}
+
+.project-descripton-title{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p.online{
+    background-color: #c1ffc467;
+    color: #00ff2a;
+}
+
+div.project-languages{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.project-languages p{
+    margin-right: 5px;
+}
+
+div.project-image{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/projectIcons/projectImage.png");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* Fim da secao */
+.container-projects-end{
+    width: 90%;
+    display: flex;
+    justify-content: right;
+}
+
+.container-projects-end p{
+    color: var(--cor-destaque);
+}
+
+/* Responsividade */
+@media (max-width: 1427px){
+    div.container-projects{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 987px){
+    div.right-description-projects-tag{
+        width: 90px;
+        height: 25px;
+    }
+
+    div.project-bloco{
+        width: 160px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 758px){
+    div.container-projects-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    div.right-description-projects-tag{
+        margin-top: 10px;
+        width: 140px;
+        height: 25px;
+    }
+
+    div.container-projects{
+        grid-template-columns: auto auto;
+    }
+
+    div.project-descripton p{
+        font-size: 0.9em;
+    }
+    
+    .project-descripton-title{
+        font-size: 1.5em;
+    }
+
+    div.project-languages p{
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 606px){
+    div.right-description-projects-tag{
+        margin-top: 10px;
+        width: 110px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 514px){
+    div.container-projects{
+        display: flex;    
+        width: 90%;
+        height: 400px;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+
+    div.project-bloco{
+        min-width: 60%;
+        height: 60%;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    div.right-description-projects-tag{
+        width: 100px;
+        height: 25px;
+    }
+    
+    .project-descripton-title{
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .tag-image{
+        width: 30px;
+    }
+}
+
+@media (max-width: 397px){
+    div.right-description-projects-tag{
+        width: 60px;
+        height: 15px;
+    }
+
+    div.right-description-projects-tag p{
+        font-size: 0.5em;
+    }
+
+    .tag-image{
+        width: 20px;
+    }
+}
