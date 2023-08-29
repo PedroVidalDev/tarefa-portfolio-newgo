@@ -1,0 +1,84 @@
+section.skills{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* topo da secao */
+div.skills-title{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.skills-title p{
+    margin: 0;
+}
+
+p.skills-title-text{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+/* content da secao */
+
+div.skills-top, div.skills-down{
+    position: relative;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+p.skills-top-text, p.skills-down-text{
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.457);
+    font-weight: bold;
+}
+
+div.skills-top-images, div.skills-down-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: relative;
+}
+
+div.skills-top-images img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+div.skills-down-images img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+@media (max-width: 730px){
+    div.skills-title{
+        align-items: flex-start;
+    }
+
+    p.skills-title-text{
+        font-size: 2em;
+    }
+
+    div.skills-top, div.skills-down{
+        align-items: flex-start;  
+    }
+
+    div.skills-top-images, div.skills-down-images{
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+}
