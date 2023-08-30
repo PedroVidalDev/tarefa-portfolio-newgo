@@ -21,10 +21,25 @@ div.container-projects-title{
     justify-content: space-between;
 }
 
+div.container-projects-title-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 p.container-projects-title-left-description{
     font-weight: bold;
     font-size: 3em;
     color: white;
+}
+
+div.container-projects-title-left-adjust{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 div.container-projects-title-right{
@@ -150,6 +165,11 @@ div.project-image{
 
 @media (max-width: 758px){
     div.container-projects-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    div.container-projects-title-left-adjust{
         flex-direction: column;
         align-items: flex-start;
     }

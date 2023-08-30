@@ -1,0 +1,136 @@
+section.feedback{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* coisas no topo da pagina */
+
+div.feedback-title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1278px;
+}
+
+div.feedback-title-adjust{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p.feedback-title-text{
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+
+div.feedback-title-icons{
+    display: flex;
+    position: relative;
+}
+
+div.feedback-title-icons-arrow{
+    display: flex;
+    padding: 20px;
+    color: var(--cor-destaque);
+    border-radius: 15px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin: 0 5px;
+    border: 1px solid var(--cor-destaque);
+    transition: .5s;
+}
+
+div.feedback-title-icons-arrow:hover{
+    background-color: var(--cor-destaque-escura);
+}
+
+/* content */
+
+div.feedback-content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+div.feedback-content-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-width: 350px;
+    height: 250px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 10px;
+    padding: 20px;
+    transition: .5s;
+    margin: 0 10px;
+}
+
+div.feedback-content-container:hover{
+    background-color: var(--cor-destaque-escura);
+}
+
+p.feedback-content-container-text{
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff7c;
+}
+
+div.feedback-content-container-down{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+div.feedback-content-container-down-description{
+    margin-left: 10px;
+}
+
+p.feedback-content-container-down-description-title{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+p.feedback-content-container-down-description-subtitle{
+    color: var(--cor-destaque);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media (max-width: 1248px){
+    div.feedback-content{
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow-x: scroll;
+    }
+
+    p.feedback-title-text{
+        font-size: 2em;
+    }
+
+    div.feedback-title-icons-arrow{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 988px){
+    div.feedback-content-container{
+        height: auto;
+    }
+}
