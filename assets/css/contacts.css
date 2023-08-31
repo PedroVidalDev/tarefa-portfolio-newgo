@@ -78,7 +78,7 @@ p.contacts-content-right-subtitle{
     margin-bottom: 10px;
 }
 
-p.contacts-bottom{
+a.contacts-bottom{
     font-size: 1em;
     font-weight: bold;
     color: var(--cor-destaque);
