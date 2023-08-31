@@ -133,4 +133,8 @@ p.feedback-content-container-down-description-subtitle{
     div.feedback-content-container{
         height: auto;
     }
+
+    div.feedback-title-icons{
+        display: none;
+    }
 }

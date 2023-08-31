@@ -1,0 +1,113 @@
+section.contacts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+div.contacts-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+p.contacts-title-text{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+}
+
+/* content */
+div.contacts-content{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+button.contacts-content-wppButton{
+    color: var(--cor-destaque);
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--cor-destaque);
+    padding: 10px;
+    background-color: #ffffff00;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 50px;
+}
+
+div.contacts-content-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+div.contacts-content-right i{
+    color: var(--cor-destaque);
+}
+
+p.contacts-content-right-title{
+    color: var(--cor-destaque);
+    font-weight: bold;
+    font-size: 1em;
+    margin: 1px 0;
+}
+
+div.contacts-content-right-adjust-subtitle{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p.contacts-content-right-subtitle{
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+p.contacts-bottom{
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+@media (max-width: 416px){
+    div.contacts-title{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    div.contacts-content{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    div.contacts-content-right{
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    div.contacts-content-right-adjust-subtitle{
+        flex-direction: row;
+    }
+
+    div.contacts-content-right-adjust-subtitle i{
+        margin-left: 5px;
+    }
+}
